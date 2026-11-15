@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="Duckschool">
+  <rect width="512" height="512" rx="112" fill="#2B4C7E"/>
+  <circle cx="256" cy="256" r="236" fill="#35609B" opacity=".55"/>
+  <!-- хвост -->
+  <path d="M120 318 Q66 292 88 246 Q132 266 150 304 Z" fill="#F5B800"/>
+  <!-- тело -->
+  <ellipse cx="248" cy="336" rx="148" ry="104" fill="#FFD43B"/>
+  <!-- ноги -->
+  <ellipse cx="206" cy="446" rx="32" ry="13" fill="#FF9F1C"/>
+  <ellipse cx="296" cy="446" rx="32" ry="13" fill="#FF9F1C"/>
+  <!-- крыло -->
+  <path d="M170 322 Q222 296 280 330 Q252 392 192 382 Q150 366 170 322 Z" fill="#F5B800"/>
+  <!-- голова -->
+  <circle cx="302" cy="218" r="90" fill="#FFD43B"/>
+  <!-- клюв -->
+  <path d="M376 206 Q448 198 462 226 Q448 256 376 250 Q368 228 376 206 Z" fill="#FF9F1C"/>
+  <path d="M378 232 Q430 236 458 228" fill="none" stroke="#E07F00" stroke-width="5" stroke-linecap="round"/>
+  <!-- щека -->
+  <circle cx="346" cy="252" r="15" fill="#FF8A5B" opacity=".55"/>
+  <!-- глаз -->
+  <circle cx="330" cy="220" r="13" fill="#1D2433"/>
+  <circle cx="334.5" cy="215.5" r="4.5" fill="#fff"/>
+  <!-- выпускная шапочка -->
+  <g transform="translate(0,-14)">
+  <path d="M250 168 v26 q52 30 104 0 v-26 q-52 26 -104 0 z" fill="#232C45"/>
+  <polygon points="302,112 416,150 302,188 188,150" fill="#2E3A5C"/>
+  <polygon points="302,112 416,150 302,188 188,150" fill="none" stroke="#FFD43B" stroke-width="4" stroke-linejoin="round"/>
+  <circle cx="302" cy="150" r="7" fill="#FFD43B"/>
+  <path d="M302 150 L404 160 L408 206" fill="none" stroke="#FFD43B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="399" y="203" width="14" height="26" rx="6" fill="#FF9F1C"/>
+  </g>
+</svg>

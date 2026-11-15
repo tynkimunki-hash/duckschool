@@ -1,0 +1,17 @@
+{
+  "exam": { "id": "grade9", "title": "Экзамены после 9 класса" },
+  "subjects": [
+    { "id": "algebra",       "title": "Алгебра",            "icon": "➗", "tier": "free",     "topics": "data/algebra/index.json" },
+    { "id": "russian",       "title": "Русский язык",       "icon": "📖", "tier": "free",     "topics": "data/russian/index.json" },
+    { "id": "biology",       "title": "Биология",           "icon": "🧬", "tier": "elective", "topics": "data/biology/index.json" },
+    { "id": "world_history", "title": "Всемирная история",  "icon": "🏛", "tier": "elective", "topics": "data/world_history/index.json" },
+    { "id": "english",       "title": "Английский язык",    "icon": "🔤", "tier": "elective", "topics": "data/english/index.json" },
+    { "id": "literature",    "title": "Литература",         "icon": "📚", "tier": "elective", "topics": "data/literature/index.json" },
+    { "id": "informatics",   "title": "Информатика",        "icon": "💻", "tier": "elective", "topics": "data/informatics/index.json" },
+    { "id": "physics",       "title": "Физика",             "icon": "⚛️", "tier": "paid",     "topics": "data/physics/index.json" },
+    { "id": "chemistry",     "title": "Химия",              "icon": "🧪", "tier": "paid",     "topics": "data/chemistry/index.json" },
+    { "id": "kz_history",    "title": "История Казахстана", "icon": "🇰🇿", "tier": "paid",     "topics": "data/kz_history/index.json" },
+    { "id": "geography",     "title": "География",          "icon": "🌍", "tier": "paid",     "topics": "data/geography/index.json" },
+    { "id": "geometry",      "title": "Геометрия",          "icon": "📐", "tier": "paid",     "topics": "data/geometry/index.json" }
+  ]
+}

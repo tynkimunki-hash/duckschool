@@ -1,0 +1,106 @@
+:root{
+  --bg:var(--tg-theme-bg-color,#ffffff);
+  --text:var(--tg-theme-text-color,#1c1c1e);
+  --hint:var(--tg-theme-hint-color,#7d7d85);
+  --link:var(--tg-theme-link-color,#2481cc);
+  --btn:var(--tg-theme-button-color,#2f80ed);
+  --btntext:var(--tg-theme-button-text-color,#ffffff);
+  --card:var(--tg-theme-secondary-bg-color,#f1f1f5);
+  --ok:#2e9e55; --bad:#e04b4f; --warn:#e8a317;
+  --r:16px;
+  --brand:#FFD43B; --brand-ink:#3a2d00;
+  --y-paper:#FFF8DB; --y-paper2:#FFEFA8; --y-mark:rgba(255,212,59,.7); --y-line:#EBCB5A; --y-accent:#F5B800;
+}
+html[data-theme="dark"]{--bg:var(--tg-theme-bg-color,#17212b);--text:var(--tg-theme-text-color,#f1f1f3);--hint:var(--tg-theme-hint-color,#8a99aa);--card:var(--tg-theme-secondary-bg-color,#232e3c);--link:var(--tg-theme-link-color,#6ab3f3);--y-paper:rgba(255,212,59,.07); --y-paper2:rgba(255,212,59,.13); --y-mark:rgba(255,212,59,.36); --y-line:rgba(255,212,59,.26)}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--text)}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;font-size:16px;line-height:1.45;-webkit-text-size-adjust:100%}
+#app{max-width:600px;margin:0 auto;padding:14px 16px calc(36px + env(safe-area-inset-bottom))}
+h1{font-size:22px;margin:6px 0 10px;line-height:1.25}
+h2{font-size:17px;margin:20px 0 8px}
+h3{font-size:16px;margin:14px 0 6px}
+p{margin:0 0 10px}
+ul{margin:0 0 10px;padding-left:20px}
+code{background:var(--card);padding:1px 5px;border-radius:6px;font-size:.95em}
+.hint{color:var(--hint);font-size:14px}
+.center{text-align:center}
+.row{display:flex;gap:10px;align-items:center}
+.row.sb{justify-content:space-between}
+.grow{flex:1;min-width:0}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.card{background:var(--card);border-radius:var(--r);padding:14px;display:block;width:100%;text-align:left;border:0;color:var(--text);font:inherit}
+button.card{cursor:pointer}
+button.card:active{opacity:.7}
+.card .big{display:block;font-size:17px;font-weight:600}
+.card .sub{display:block;font-size:13px;color:var(--hint);margin-top:2px}
+.card.locked{opacity:.65}
+.stack>*+*{margin-top:10px}
+.btn{display:block;width:100%;border:0;border-radius:14px;padding:14px;font:inherit;font-weight:600;background:var(--btn);color:var(--btntext);cursor:pointer;text-align:center}
+.btn:active{opacity:.8}
+.btn.ghost{background:var(--card);color:var(--text)}
+.btn.small{padding:9px 12px;font-size:14px;display:inline-block;width:auto}
+.btn:disabled{opacity:.45;cursor:default}
+.back{background:none;border:0;color:var(--link);font:inherit;padding:4px 0;cursor:pointer}
+.badge{display:inline-block;font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--btn);color:var(--btntext);vertical-align:middle}
+.badge.gray{background:var(--card);color:var(--hint)}
+.streak{display:flex;align-items:center;gap:12px}
+.streak .num{font-size:34px;font-weight:700;line-height:1}
+.bar{height:8px;background:var(--card);border-radius:4px;overflow:hidden;margin:6px 0 14px}
+.bar>i{display:block;height:100%;background:var(--btn);border-radius:4px;transition:width .25s}
+.bar.thin{height:6px;margin:4px 0 0}
+.q-text{font-size:19px;font-weight:600;margin:8px 0 14px}
+.q-text p{margin:0 0 6px}
+.opt{display:block;width:100%;text-align:left;border:2px solid transparent;background:var(--card);color:var(--text);border-radius:14px;padding:13px 14px;font:inherit;margin-bottom:10px;cursor:pointer}
+.opt.on{border-color:var(--btn)}
+input.ans{width:100%;border:2px solid var(--card);background:var(--card);color:var(--text);border-radius:14px;padding:13px 14px;font:inherit;font-size:18px;outline:none}
+input.ans:focus{border-color:var(--btn)}
+.note{background:var(--card);border-radius:14px;padding:12px 14px}
+.note.yellow{border-left:4px solid var(--warn)}
+.note.green{border-left:4px solid var(--ok)}
+.review{border-left:4px solid var(--bad);background:var(--card);border-radius:12px;padding:10px 12px;margin-bottom:10px}
+.review .your{color:var(--bad)}
+.review .right{color:var(--ok);font-weight:600}
+details{background:var(--card);border-radius:14px;padding:10px 14px;margin:8px 0}
+summary{cursor:pointer;font-weight:600}
+.big-emoji{font-size:56px;margin:8px 0}
+.scale{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.scale button{border:2px solid transparent;background:var(--card);color:var(--text);border-radius:12px;padding:10px 2px;font:inherit;font-weight:700;cursor:pointer}
+.scale button.on{border-color:var(--btn)}
+.scale-labels{display:flex;justify-content:space-between;font-size:12px;color:var(--hint);margin:6px 2px 0}
+.tbar{display:flex;align-items:center;gap:8px;margin:6px 0}
+.tbar .name{width:110px;font-size:14px}
+.tbar .track{flex:1;height:12px;background:var(--card);border-radius:6px;overflow:hidden}
+.tbar .track i{display:block;height:100%;background:var(--btn)}
+.tbar .pct{width:42px;text-align:right;font-size:14px;color:var(--hint)}
+.timer{font-variant-numeric:tabular-nums;font-weight:600}
+.toast{position:fixed;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translateX(-50%);background:#222;color:#fff;padding:10px 16px;border-radius:12px;font-size:14px;max-width:90%;z-index:10;text-align:center}
+textarea.code{width:100%;min-height:60px;border:2px solid var(--card);background:var(--card);color:var(--text);border-radius:12px;padding:10px;font:13px/1.3 monospace;resize:vertical}
+.chk{display:flex;gap:10px;align-items:center;padding:10px 0}
+.chk input{width:20px;height:20px}
+
+/* ---------- Бренд Duckschool ---------- */
+.brand{display:flex;align-items:center;gap:10px;min-width:0}
+.brand img{width:44px;height:44px;border-radius:13px;flex:none;box-shadow:0 2px 6px rgba(0,0,0,.18)}
+.brand .name{font-size:22px;font-weight:800;line-height:1.1;letter-spacing:-.2px}
+.brand .name b{color:var(--y-accent)}
+.brand .sub{font-size:12px;color:var(--hint)}
+.btn.yellow{background:var(--brand);color:var(--brand-ink);box-shadow:0 3px 0 var(--y-accent)}
+.btn.yellow:active{box-shadow:none;transform:translateY(2px)}
+
+/* ---------- Конспект: тёплая «тетрадная» страница ---------- */
+.lesson-wrap{background:var(--y-paper);border:1px solid var(--y-line);border-radius:22px;padding:10px 16px 14px;margin:6px 0 14px;box-shadow:0 3px 0 var(--y-line)}
+.lesson-wrap p{margin:0 0 12px;line-height:1.6}
+.lesson-wrap ul{margin:0 0 12px}
+.lesson-wrap li{line-height:1.55;margin-bottom:3px}
+.lesson-wrap h2{display:inline-block;margin:16px 0 10px;font-size:18px;line-height:1.3;padding:0 4px;background:linear-gradient(transparent 58%,var(--y-mark) 58%)}
+.lesson-wrap code{background:var(--y-paper2)}
+.duck-say{display:flex;gap:12px;align-items:flex-start;background:var(--y-paper2);border:1px solid var(--y-line);border-radius:18px;padding:12px 14px;margin:4px 0 6px}
+.duck-say img{width:46px;height:46px;border-radius:13px;flex:none}
+.duck-say .bubble p:last-child{margin-bottom:0}
+.notebook{background:var(--y-paper2) repeating-linear-gradient(transparent,transparent 27px,var(--y-line) 27px,var(--y-line) 28px);border:1px solid var(--y-line);border-left:6px solid var(--y-accent);border-radius:14px;padding:8px 14px 6px;margin:18px 0 8px}
+.notebook h3{margin:0;line-height:28px;font-size:16px}
+.notebook ul{margin:0;padding-left:20px}
+.notebook li{line-height:28px;margin:0}
+.lesson-wrap .example{background:var(--bg);border:2px dashed var(--y-line);border-radius:14px;padding:12px 14px}
+.lesson-wrap details{background:var(--y-paper2);border:1px solid var(--y-line)}
+.lesson-wrap summary{color:var(--text)}

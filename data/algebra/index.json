@@ -1,0 +1,16 @@
+{
+ "subject": "algebra",
+ "demo": true,
+ "topics": [
+  {
+   "id": "alg-demo-01",
+   "title": "Линейные уравнения",
+   "order": 1
+  },
+  {
+   "id": "alg-demo-02",
+   "title": "Квадратные уравнения",
+   "order": 2
+  }
+ ]
+}
